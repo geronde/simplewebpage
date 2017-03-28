@@ -1,0 +1,386 @@
+/* General rules */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+}
+
+body {
+    margin-bottom: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+.hidden {
+	visibility: hidden;
+}
+
+/* end */
+.hamburger {
+    visibility: hidden;
+}
+#logo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -25px;
+}
+.centered-logo {
+left: 50%;
+margin-left: -50px;
+transition: all 1s ease;
+}
+#logo img {
+    width: 100px;
+    display: block;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #46899b;
+    box-shadow: 1px 1px 1px 1px #2b4046;
+    z-index: 999;
+}
+.nav ul {
+    position: absolute;
+    right: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav li a:last-child {
+    margin-right: 10px;
+}
+
+.nav li a {
+    line-height: 30px;
+    color: #eee;
+    font-size: 1.25em;
+    transition: color .5s ease;
+}
+
+.animated-nav {
+    height:45px;
+    transition: all 0.5s ease;
+
+}
+/*toggle nav*/
+.toggle-nav {
+    width: 100%;
+    position: relative;
+}
+.toggle-nav ul {
+    width: 100%;
+    position: absolute;
+     background-color: #2b4046;
+   top: -10px;
+}
+.toggle-nav li {
+    display: block;
+}
+.toggle-nav a {
+    padding: 20px;
+    display: block;
+    color: #eee;
+    font-size: 2em;
+    text-align: center;
+    transition: color 0.25s linear;
+}
+.toggle-nav li:hover {
+    background-color: rgba(202, 197, 190, 0.2);
+    transition: background-color 0.25s ease;
+}
+.hide {
+    visibility: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.half-screen {
+    width: 100%;
+    height: 75%;
+}
+
+.main-section {
+    background: url('img/smiling.jpg') right top no-repeat;
+    background-size: cover;
+}
+.call_action {
+    border: 2px solid skyblue;
+    box-shadow: 1px 1px 1px 1px #000;
+    position: absolute;
+    width: 20%;
+    height:10%;
+    left: 50%;
+    top: 60%;
+    margin-left: -10%;
+    text-align: center;
+    line-height:75px;
+    color: #eee;
+    background-color: lightskyblue;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+.call_action:hover {
+    border:1.5px solid navy;
+    box-shadow: 1px 1px #000;
+    font-size: 1.75em;
+    background-color:skyblue;
+    transition: all 1s ease;
+}
+.section2 {
+background-color: #f0f0f3;
+position: relative;
+}
+
+.quotes {
+	position: absolute;
+	width: 75%;
+	left: 0;
+	height: 100%;
+}
+.quotes p {
+	padding: 20px;
+	padding-top: 15%;
+	font-size:2.5em;
+	text-align: left;
+	color: #AF3C78;
+    font-family: 'Alegreya', serif;
+
+}
+aside {
+	position: absolute;
+	right: 0;
+}
+.side-icons {
+	padding: 100px;
+}
+.section3 {
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #000;
+    background-color: #aaabac;
+}
+.blend-phrase {
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	display: block;
+	color: #eee;
+	top: 25%;
+	text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+	font-size: 3em;
+	font-family: 'Hammersmith One', sans-serif;
+	
+
+}
+.article1 {
+    width: 50%;
+    height: 100%;
+    background: url('img/meditation.jpeg') no-repeat left top;
+    background-size: cover;
+    position: absolute;
+}
+
+.article2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url('img/music.jpg');
+    right: 0;
+    background-size: cover;
+}
+.section4 {
+	position: relative;
+	width: 100%;
+}
+
+.stickers {
+    position: relative;
+    display:block;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:30px;
+  }
+.stickers img {
+    width:77%;
+    border-radius: 100%;
+}
+.stickers figcaption {
+	width: 100%;
+    margin: 0 auto;
+	padding: 20px 0px 20px 0px;
+    font-size: 1.3em;
+}
+footer {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    background-color:#2b4046;
+    position: relative;
+    bottom: 0;
+}
+
+.social_media {
+	position: relative;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+}
+
+.social_media img {
+    width: 75px;
+    margin: 0 5px 0 5px;
+}
+
+.social_media a:hover {
+    opacity: 0.5;
+}
+.phrase {
+	text-align: center;
+	padding: 10px;
+	font-size: 1.1em;
+	color: #eee;
+	padding-top: 100px;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #eee;
+    opacity: 0.9;
+    font-size: 0.85em;
+    padding: 5px;
+}
+/* ==========================================================================
+   animation classes
+   ========================================================================== */
+.slideup {
+    transform: translate3d(0,-30px, 0);
+    transition: all 1s ease;
+    transition-delay: .25s;
+}
+
+.slidedown {
+    transform: translate3d(0, 75px, 0);
+    transition: all 1s ease;
+    transition-delay: .2s;
+}
+/*  Responsive Layout
+   ========================================================================== */
+@media screen and (max-width: 960px) {
+
+
+.call_action {
+    width: 25%;
+    height:10%;
+    margin-left: -12.5%;
+    line-height:65px;
+    font-size: 1.25em;
+}
+
+.call_action:hover {
+    font-size: 1.5em;
+}
+	.section2 .quotes {
+		font-size: 1em;
+	}
+	.blend-phrase {
+		font-size:2em ;
+	}
+	
+}
+
+@media screen and (max-width:768px) {
+.call_action {
+    width: 50%;
+    height:10%;
+    margin-left: -25%;
+    line-height:65px;
+    font-size: 1.25em;
+   }
+
+
+	.section2 .quotes {
+		position: relative;
+		text-align: center;
+		width: 100%;
+
+	}
+	.quotes p {
+		font-size:1.75em;
+		margin: 0;
+		padding:30px;
+		padding-top: 50px;
+	}
+	aside {
+		bottom: 0;
+		left: 0;
+		display: block;
+		text-align: center;
+	}
+	.side-icons {
+		width: 100%;
+		padding: 50px;
+		
+	}
+	.stickers {
+        width: 55%;
+        padding-top: 50px;
+	}
+    figcaption {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+.call_action {
+    width: 75%;
+    height:10%;
+    margin-left: -37.5%;
+  
+   }
+
+	.stickers {
+		width: 75%;
+        padding-top: 75px;	
+	}
+	figcaption {
+		font-size: 0.75em;
+	}
+    .social_media img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
